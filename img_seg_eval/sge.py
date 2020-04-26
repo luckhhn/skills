@@ -103,4 +103,4 @@ if __name__ == '__main__':
     print('\r', cpa)
     print('mpa is : %f' % mpa)
     print('mIoU is : %f' % mIoU)
-    print('FIOU is : %f' % FIOU)
+    print('FwIOU is : %f' % FIOU)
