@@ -31,12 +31,55 @@ class MySGD:
 
 
 if __name__ == "__main__":
-    # 初始点
-    x0 = np.array([2, 2])
-    # 求解的函数
-    fx = lambda x: x[0]**2+x[1]**2  # lambda匿名函数，在ep8后就丢弃了
-    # 梯度
-    dfx = lambda x: np.array([2*x[0], 2*x[1]])
-    # 调用类函数
-    result = MySGD().solve(x0, fx, dfx)
-    print('\n min value %s => %.9f' % (result[0], result[1]))
+    # # 初始点
+    # x0 = np.array([2, 2])
+    # # 求解的函数
+    # fx = lambda x: x[0]**2+x[1]**2  # lambda匿名函数，在ep8后就丢弃了
+    # # 梯度
+    # dfx = lambda x: np.array([2*x[0], 2*x[1]])
+    # # 调用类函数
+    # result = MySGD().solve(x0, fx, dfx)
+    # print('\n min value %s => %.9f' % (result[0], result[1]))
+    Class = 1
+    print(Class)
+    eval("12+23")
+    e, f = 1, 2
+    a = b = c =1
+    # I = ["i","love",'HCT']
+    # for k,v in enumerate(I):
+    #     if k == 1:
+    #         continue
+    #     print(v,end="")
+
+    I = ["i", "love", 'python','a','little','more']
+    first,*middle,last= I
+    print(first)
+    print(*middle)
+    print(last)
+    print(len(list(middle)))
+
+    result = ''
+    for s in I:
+        result +=s
+    print(result)
+    print("i\'m in HCT.")
+    print(r'i\'m in HCT.')
+    print("""i'm in HCT.""")
+
+
+    print(1.2-1.0 == 0.2)
+    print(1)
+    a =(1,2)
+    print(type(a))
+    dict = {'1':1,'2':2}
+    the = dict.copy()
+    dict["1"]=5
+    print(dict['1']+the['1'])
+    a = [i for i in map(lambda x,y:x+y,['hui','hc','Artifical'],['ke','tech','intelligence'])]
+    print(a)
+
+    alist =[{'name':'a','age':20},{'name':'b','age':30},{'name':'c','age':25}]
+    # alist.sort(key=lambda x:x['age'],reverse=True)
+    # print(alist)
+    alist= sorted(alist,key=lambda x:x['age'],reverse=True)
+    print(alist)
